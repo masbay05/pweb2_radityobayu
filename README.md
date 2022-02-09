@@ -1,12 +1,12 @@
-# Laravel 8 + Stisla + Jetstream + Livewire
+# Laravel 9 + Stisla + Jetstream + Livewire
 
-we love Stisla Admin Template and Laravel 8 let's make them love each other.
+we love Stisla Admin Template and Laravel 9 let's make them love each other.
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/zalabs02/laravel-9-stisla-jetstream/issues)
 
 ## What inside?
 
--   Laravel ^9.x - [laravel.com/docs/9.x](https://laravel.com/docs/8.x)
+-   Laravel ^9.x - [laravel.com/docs/9.x](https://laravel.com/docs/9.x)
 -   Laravel Jetstream ^2.6 - [jetstream.laravel.com](https://jetstream.laravel.com/)
 -   Livewire ^2.5 - [laravel-livewire.com](https://laravel-livewire.com)
 -   Stisla Admin Template ^2.3.0 - [getstisla.com](https://getstisla.com/)
