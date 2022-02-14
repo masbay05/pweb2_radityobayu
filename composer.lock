@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94c8471b363bd2615330b04521b0830f",
+    "content-hash": "9f2a2a5e9cccd9469e020917fe27b1ba",
     "packages": [
         {
             "name": "afrizalmy/laraindo",
@@ -8545,7 +8545,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.0"
+        "php": "^8.0.2"
     },
     "platform-dev": [],
     "plugin-api-version": "2.2.0"
