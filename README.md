@@ -27,8 +27,10 @@ Next step is install all dependency required by laravel and laravel-mix.
 $ cd <project_name>
 # install npm package
 $ npm install
-# build dev
+# build dev / hot reload
 $ npm run dev
+# build files (for production)
+$ npm run build
 ```
 
 configure `.env` file and do migration.
