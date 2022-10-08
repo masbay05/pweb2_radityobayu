@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group([ "middleware" => ['auth:sanctum', 'verified'] ], function() {
+Route::group([ "middleware" => ['auth:sanctum', config('jetstream.auth_session'), 'verified'] ], function() {
     Route::view('/dashboard', "dashboard")->name('dashboard');
 
     Route::get('/user', [ UserController::class, "index_view" ])->name('user');
