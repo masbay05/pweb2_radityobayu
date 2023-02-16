@@ -4,6 +4,8 @@ we love Stisla Admin Template and Laravel 9 let's make them love each other.
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/zalabs02/laravel-9-stisla-jetstream/issues)
 
+> **Looking for laravel 10?** 
+    Check it out [this](https://packagist.org/packages/afrizalmy/laravel10-stisla-livewire)
 ## What inside?
 
 -   Laravel ^9.x - [laravel.com/docs/9.x](https://laravel.com/docs/9.x)
