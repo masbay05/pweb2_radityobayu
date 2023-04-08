@@ -2,20 +2,20 @@
 $links = [
     [
         "href" => "dashboard",
-        "text" => "Dashboard",
+        "text" => "Menu",
         "is_multi" => false,
     ],
     [
         "href" => [
             [
-                "section_text" => "User",
+                "section_text" => "Kelola Pengguna",
                 "section_list" => [
                     ["href" => "user", "text" => "Data User"],
                     ["href" => "user.new", "text" => "Buat User"]
                 ]
             ]
         ],
-        "text" => "User",
+        "text" => "Pengguna",
         "is_multi" => true,
     ],
 ];
@@ -24,9 +24,10 @@ $navigation_links = array_to_object($links);
 
 <div class="main-sidebar">
     <aside id="sidebar-wrapper">
-        <div class="sidebar-brand">
-            <a href="{{ route('dashboard') }}">Dashboard</a>
-        </div>
+        <img src="{{asset('asset/removebg.png')}}" alt="" width="200" heiht="200" >
+        {{-- <div class="sidebar-brand">
+            <a href="{{ route('dashboard') }}">DPUPR</a>
+        </div> --}}
         <div class="sidebar-brand sidebar-brand-sm">
             <a href="{{ route('dashboard') }}">
                 <img class="d-inline-block" width="32px" height="30.61px" src="" alt="">
@@ -37,7 +38,10 @@ $navigation_links = array_to_object($links);
             <li class="menu-header">{{ $link->text }}</li>
             @if (!$link->is_multi)
             <li class="{{ Request::routeIs($link->href) ? 'active' : '' }}">
-                <a class="nav-link" href="{{ route($link->href) }}"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+                <a class="nav-link" href="{{ route($link->href) }}"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+            </li>
+            <li class="{{ Request::routeIs('data.index') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('daftarkontraktor') }}"><i class="fas fa-address-card"></i><span>Data Kontraktor</span></a>
             </li>
             @else
                 @foreach ($link->href as $section)
@@ -50,7 +54,7 @@ $navigation_links = array_to_object($links);
                     @endphp
 
                     <li class="dropdown {{ ($is_active) ? 'active' : '' }}">
-                        <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-chart-bar"></i> <span>{{ $section->section_text }}</span></a>
+                        <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-users"></i> <span>{{ $section->section_text }}</span></a>
                         <ul class="dropdown-menu">
                             @foreach ($section->section_list as $child)
                                 <li class="{{ Request::routeIs($child->href) ? 'active' : '' }}"><a class="nav-link" href="{{ route($child->href) }}">{{ $child->text }}</a></li>

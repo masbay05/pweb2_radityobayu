@@ -11,7 +11,7 @@
 
         <div class="row mb-4">
             <div class="col form-inline">
-                Per Page: &nbsp;
+               &nbsp; Per Page: &nbsp;
                 <select wire:model="perPage" class="form-control">
                     <option>10</option>
                     <option>15</option>

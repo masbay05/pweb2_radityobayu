@@ -6,16 +6,21 @@ $user = auth()->user();
 <nav class="navbar navbar-expand-lg main-navbar">
     <form class="form-inline mr-auto">
         <ul class="navbar-nav mr-3">
-            <li><a href="#" data-turbolinks="false" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#" data-turbolinks="false" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-list-ul"></i></a></li>
         </ul>
-        <h1 class="font-weight-bold text-2xl text-white">{{ config('app.name', 'Laravel') }}</h1>
+        {{-- <img src="{{asset('asset/lambang_kotak.png')}}" alt="" width="30" heiht="30" >
+        &nbsp;
+        &nbsp;
+        <p> --}}
+        
+        <h5 class="font-weight-bold text-2xl text-white">{{ config('Sistem Informasi Monitoring Progres Pekerjaan Jalan dan Jembatan', 'Sistem Informasi Monitoring Progres Pekerjaan Jalan dan Jembatan') }}</h5>
     </form>
     <ul class="navbar-nav navbar-right">
         <li class="dropdown"><a href="#" data-turbolinks="false" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
             @if (!is_null($user))
-                <div class="d-sm-none d-lg-inline-block">Hi, {{ $user->name }}</div></a>
+                <div class="d-sm-none d-lg-inline-block">Selamat datang , {{ $user->name }}</div></a>
             @else
-                <div class="d-sm-none d-lg-inline-block">Hi, Welcome</div></a>
+                <div class="d-sm-none d-lg-inline-block">Hai, Welcome</div></a>
             @endif
             <div class="dropdown-menu dropdown-menu-right">
                 <a href="/user/profile" class="dropdown-item has-icon">
@@ -30,7 +35,7 @@ $user = auth()->user();
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
 
-                    <a href="{{ route('logout') }}" class="dropdown-item has-icon text-danger" onclick="event.preventDefault();this.closest('form').submit();">
+                    <a href="{{ route('login') }}" class="dropdown-item has-icon text-danger" onclick="event.preventDefault();this.closest('form').submit();">
                         <i class="fas fa-sign-out-alt"></i> Logout
                     </a>
                 </form>

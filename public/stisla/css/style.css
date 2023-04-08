@@ -1537,7 +1537,7 @@ h6 .badge {
   left: 0;
   width: 100%;
   height: 115px;
-  background-color: #6777ef;
+  background-color: #22a39f;
   z-index: -1; }
 
 .navbar {
@@ -1943,7 +1943,7 @@ body, html {
   min-height: 100%; }
 
 body {
-  background-color: #f4f6f9;
+  background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1027558182%2Fphoto%2Fworks-of-extension-of-a-road-with-excavator-and-delimited-by-safety-cones.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DVpu72Oel-ikRWd-N7D9OG5EdBjZPLultKVig0au5qUo%3D&tbnid=dagQ7U77hU-v8M&vet=12ahUKEwjBl4rJu5D-AhUS_zgGHZx-BVoQMygHegUIARDjAQ..i&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Froad-construction&docid=nk9rz9saroeBHM&w=612&h=408&q=road%20construction%20background&ved=2ahUKEwjBl4rJu5D-AhUS_zgGHZx-BVoQMygHegUIARDjAQ');
   font-size: 14px;
   font-weight: 400;
   font-family: "Nunito", "Segoe UI", arial;
